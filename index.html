@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顔から年齢予想サイト</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📸 顔から年齢予想サイト 🎉</h1>
+        <p>あなたの顔面からAIが年齢を予測します!!<br>0歳から100歳までの年齢が表示されます!!</p>
+        <div class="camera-box">
+            <p id="status">カメラを起動中だよ… ⏳</p>
+            <div class="loader"></div>
+        </div>
+        <button onclick="startCamera()">カメラで撮影する</button>
+        <video id="video" autoplay playsinline style="display:none;"></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
